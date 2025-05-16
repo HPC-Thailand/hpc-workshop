@@ -22,13 +22,13 @@ sudo mv slurm-24.11.5.tar.bz2 /opt
 
 ```bash
 cd /opt
-sudo tar -xvjf slurm-24.11.1.tar.bz2
+sudo tar -xvjf slurm-24.11.5.tar.bz2
 ```
 
 ### Step 4. configure, make, install
 
 ```bash
-cd slurm-24.11.1
+cd slurm-24.11.5
 sudo ./configure --with-pmix=/lib/x86_64-linux-gnu/pmix2/ --with-systemdsystemunitdir=/etc/systemd/system --enable-pam --sysconfdir=/etc/slurm
 sudo make
 sudo make install
@@ -37,7 +37,7 @@ sudo make install
 ### Step 5.
 
 ```bash
-cd slurm-24.05.1
+cd slurm-24.11.5
 
 #On  Frontend Node (vm-01)
 sudo cp etc/slurmctld.service /lib/systemd/system
